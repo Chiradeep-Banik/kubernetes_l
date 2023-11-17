@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ng
+  labels:
+    id: ngx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      id: ngx
+  template:
+    metadata:
+      labels:
+        id: ngx
+    spec:
+      containers:
+      - name: ng
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+
