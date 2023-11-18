@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ng-service
+  name: db-service-internal
 spec:
   selector:
-    id: ngx
+    name: db
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 27017 
+      targetPort: 27017
