@@ -48,3 +48,11 @@
 - **Ingress**
     - It is used to route the external request to a service in our cluster based on the rules mentioned in the ingress-pod
     - The ingress-pod is the main gateway to our cluster(if I am not wrong)
+- **Persistant Volume**
+    - It is quite similar to docker volumes
+    - Persistant Volumes are used to store the state of a kubernatese cluster even if the cluster fails.
+    - It is not namespace bound and can be access by any pod cluster wide.
+- **Persistant Volume Claim**
+    - It is used to claim some persistant storage for a pod.
+    - It is namespace bound.
+
