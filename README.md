@@ -45,4 +45,6 @@
     - Only services can be shared among namespaces.
     - It is used to allow various namespaces to access the same resources within a cluster.
     - It also makes the cluster set-up much more modular
-
+- **Ingress**
+    - It is used to route the external request to a service in our cluster based on the rules mentioned in the ingress-pod
+    - The ingress-pod is the main gateway to our cluster(if I am not wrong)
