@@ -38,5 +38,11 @@
         - **etcd**
             - It is a key-value store for the cluster.
             - It stores the data regarding the nodes and the pods.          
-
+- **Namespace**
+    - It is use to seperate deployments within the same cluster.
+    - It makes the deployments assigned to a namespace completly invisible from any other cluster.
+    - configMaps and secrets cannot be shared among namespaces.
+    - Only services can be shared among namespaces.
+    - It is used to allow various namespaces to access the same resources within a cluster.
+    - It also makes the cluster set-up much more modular
 
